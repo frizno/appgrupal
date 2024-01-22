@@ -1,0 +1,15 @@
+<!-- obra.component.html -->
+
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <img [src]="obra.imagen" class="card-img-top" alt="Obra de arte">
+    <div class="card-body">
+      <h5 class="card-title">{{ obra.titulo }}</h5>
+      <p class="card-text">{{ obra.descripcion }}</p>
+      <p class="card-text"><small class="text-muted">Categoría: {{ obra.categoria }}</small></p>
+      <button class="btn btn-primary" (click)="verDetalle()">Ver Detalle</button>
+    </div>
+  </div>
+</div>
+
+
